@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 4.2.0)
 
 project(libkpi
-	VERSION 0.1.0
+	VERSION ${KPI_VERSION}
 	LANGUAGES C)
 
 add_library(kpi STATIC
@@ -33,7 +33,7 @@ configure_package_config_file(
 
 write_basic_package_version_file(
     ${CMAKE_CURRENT_BINARY_DIR}/kpiConfigVersion.cmake
-    VERSION ${PROJECT_VERSION}
+    VERSION ${KPI_VERSION}
     COMPATIBILITY AnyNewerVersion
 )
 
